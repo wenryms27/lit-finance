@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit Finance</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Lit Finance - Gerenciamento de Contas</h1>
+        
+        <form id="formConta">
+            <input type="text" id="descricao" placeholder="Descrição" required>
+            <input type="number" id="valor" placeholder="Valor" required>
+            <select id="tipo" required>
+                <option value="" disabled selected>Selecione o tipo</option>
+                <option value="receber">Contas a Receber</option>
+                <option value="pagar">Contas a Pagar</option>
+            </select>
+            <button type="submit">Adicionar Conta</button>
+        </form>
+        
+        <table id="tabelaContas">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Tipo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As contas adicionadas aparecerão aqui -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script> <!-- Referência ao arquivo JavaScript -->
+</body>
+</html>
